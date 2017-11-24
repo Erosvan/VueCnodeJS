@@ -1,8 +1,13 @@
 <template>
     <div id="app">
+<<<<<<< HEAD
         <cnode-head></cnode-head>
         <router-view name='main'></router-view>
         <router-view name='side' ref='child'></router-view>
+=======
+        <main-sec></main-sec>
+        <side-sec></side-sec>
+>>>>>>> parent of ec20904... 完成首页和文章页的结构部分，没有样式
     </div>
 </template>
 

@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
     <div class='secDiv' v-loading='loading'>
         <div v-for='item of content' :key='item.id'>
             <router-link :to='{name: "UserRoute",params:{name: item.author.loginname}}'>
@@ -12,10 +13,15 @@
                 </div>
             </div>
         </div>
+=======
+    <div class='secDiv'>
+        <p> main sec </p>
+>>>>>>> parent of ec20904... 完成首页和文章页的结构部分，没有样式
     </div>
 </template>
 
 <script>
+<<<<<<< HEAD
 console.log('Hello,Friend!');
 
 export default {
@@ -134,4 +140,27 @@ a {
 .stuff span:first-child {
     margin-right: 2rem;
 }
+=======
+    export default {
+        name: 'MainSection',
+        data() {
+            return {
+                content: '',
+            };
+        },
+    };
+</script>
+
+<style scoped>
+    .secDiv{
+        width: 60%;
+        height: 40rem;
+        background: #fff;
+        border: 1px solid #ddd;
+        
+    }
+    p {
+        color: red;
+    }
+>>>>>>> parent of ec20904... 完成首页和文章页的结构部分，没有样式
 </style>
